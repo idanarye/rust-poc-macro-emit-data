@@ -25,3 +25,8 @@ Because 42 is the value we fed to `poc_macro_emit_data::declaration!` and
 is doing the actual derive work (instead of `PresetDefault`), and receives both
 the struct it needs to derive and the data set in `declaration!` - a totally
 different macro invocation.
+
+## Pitfalls
+
+- `run_set_the_default!` needs the crate's name to call `set_the_default!` - so
+  if you change the crate's name in `Cargo.toml` it wouldn't work.
