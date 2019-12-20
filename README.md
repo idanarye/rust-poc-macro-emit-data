@@ -1,6 +1,6 @@
 With Rust 1.40.0, procedural macros are allowed to declare `macro_rules!`
-macros. This crate demonstrates how this new feature can be used to emit data
-from one procedural macro and use it in another.
+macros. This repository demonstrates how this new feature can be used to emit
+data from one procedural macro and use it in another.
 
 (For simplicity, the implementation assumes the exact structure of the
 struct. Real world usages are going to be more complex)
